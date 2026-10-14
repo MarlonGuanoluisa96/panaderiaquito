@@ -1,3 +1,13 @@
+header{
+    background-color: brown;
+    color: white;
+}
+
 body{
     background-color: blanchedalmond;
+}
+
+.contenedor-formulario{
+    border: 1px;
+    border-color: black;
 }
