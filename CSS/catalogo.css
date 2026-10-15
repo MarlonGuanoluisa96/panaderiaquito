@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    background-color: #f9ad16;
+    color: #2b180d;
+}
+.contenedor{
+    width: 100%;
+    margin: 0;
+    background-color: #f9ad16;
+}
+/*encabezxado*/
+header{
+    background-color: #3d2314;
+    color: #ffae16;
+    padding: 15px 25px;
+    position: static;
+
+}
+
+header h1{
+    margin: 0;
+     font-family: 'Spicy Rice';
+}
+
+.texto-panaderia {
+    color: #ffae16;
+}
+
+/*CATALOGO*/
+section {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    padding: 25px;
+    align-items: stretch;
+}
+article {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #00000020;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+    transition: transform 0.2s;
+}
+
+article:hover { /*cunado se pone el mouse encima sem mueveeeae*/
+    transform: translateY(-4px);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: auto;
+    border: none;
+    border-radius: 8px;
+    background-color: #3d2314;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.imagen{
+    display: block;
+    margin: auto;
+    width: 124px;
+    height: 124px;  
+    object-fit: contain;
+    background-color: white;
+    border: 1px solid #3E4C52;
+    border-radius: 8px;
+   
+}
