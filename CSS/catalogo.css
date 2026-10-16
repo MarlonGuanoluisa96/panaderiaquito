@@ -4,7 +4,6 @@
 
 body{
     margin: 0;
-    display: flex;
     background-color: #f9ad16;
     color: #2b180d;
 }
@@ -18,48 +17,65 @@ header{
     background-color: #3d2314;
     color: #ffae16;
     padding: 15px 25px;
-    position: static;
+    display: flex;
+    justify-content:space-between ;
+    min-height: 110px;
+    align-items: center;
 
 }
 
 header h1{
     margin: 0;
-     font-family: 'Spicy Rice';
+    text-align: center;
+    font-family: 'Spicy Rice';
+    font-size: 50px;
 }
 
-.texto-panaderia {
-    color: #ffae16;
+.logo{
+    width: 100px;
 }
+
+.logo img{
+    width: 100%;
+}
+
+/*barra nav con carrito*/
+
+
+
+
 
 /*CATALOGO*/
 section {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     padding: 25px;
     align-items: stretch;
+    height: auto;
 }
 article {
     background-color: whitesmoke;
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
     box-shadow: 0 3px 15px #00000020;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     min-width: 0;
     transition: transform 0.2s;
 }
 
-article:hover { /*cunado se pone el mouse encima sem mueveeeae*/
-    transform: translateY(-4px);
+
+article img{
+
+    width: 125px;
+    height: 125px;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: auto;
+    width: fit-content;/*para que el boton no se vea anchoooooo*/
+    padding: 8px 15px;
     border: none;
     border-radius: 8px;
     background-color: #3d2314;
@@ -67,16 +83,4 @@ button {
 
     cursor: pointer;
 
-}
-
-.imagen{
-    display: block;
-    margin: auto;
-    width: 124px;
-    height: 124px;  
-    object-fit: contain;
-    background-color: white;
-    border: 1px solid #3E4C52;
-    border-radius: 8px;
-   
 }
