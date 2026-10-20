@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #f9ad16;
+    color: #2b180d;
+}
+.contenedor{
+    width: 100%;
+    margin: 0;
+    background-color: #f9ad16;
+}
+/*encabezxado*/
+header{
+    background-color: #3d2314;
+    color: #ffae16;
+    padding: 15px 25px;
+    display: flex;
+    justify-content:space-between ;
+    min-height: 110px;
+    align-items: center;
+
+}
+
+header h1{
+    margin: 0;
+    text-align: center;
+    font-family: 'Spicy Rice';
+    font-size: 50px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+/*barra nav con carrito*/
+
+
+
+
+
+/*CATALOGO*/
+section {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 25px;
+    align-items: stretch;
+    height: auto;
+}
+article {
+    background-color: whitesmoke;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #00000020;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+    transition: transform 0.2s;
+}
+
+
+article img{
+
+    width: 125px;
+    height: 125px;
+}
+
+button {
+    width: fit-content;/*para que el boton no se vea anchoooooo*/
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3d2314;
+    color: white;
+
+    cursor: pointer;
+
+}

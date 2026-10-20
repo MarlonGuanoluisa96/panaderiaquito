@@ -1,0 +1,201 @@
+/* 1. Fondo café oscuro y control de diseño para todo el encabezado */
+.encabezado {
+    background-color: #3d2314 ; /* Código de color café oscuro */
+    padding: 15px 20px 15px 10px;
+    width: 100%;
+    /* Redondea únicamente las esquinas de abajo */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* Color general de fondo para toda la página */
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f9ad16; /* Fondo amarillo para toda la página */
+    overflow-x: hidden;
+}
+
+/* 2. Alinea el logo y el texto horizontalmente uno al lado del otro */
+.marca {
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente respecto al logo */
+    gap: 12px;           /* Espacio de separación entre el logo y el nombre */
+    text-decoration: none;
+}
+
+/* 3. Reduce el tamaño de la imagen del logo en el encabezado */
+.encabezado img {
+    width: 80px;   /* Ancho más pequeño y elegante */
+    height: 80px;  /* Alto proporcional */
+    object-fit: cover;
+    border-radius: 50%; /* Opcional: logo sea circular */
+
+
+}
+
+/* 2. Centra vertical y horizontalmente los elementos dentro de la barra */
+.encabezado-contenido {
+    display: flex;
+    justify-content: space-between; /* Mantiene el logo a la izquierda, menú al centro y pedido a la derecha */
+    align-items: center;            /* Centra todo verticalmente al medio */
+    max-width: 1200px;              /* Limita el ancho para que no se pegue tanto a los bordes */
+    margin: 0 auto;                 /* Centra el contenedor general en la página */
+    padding-left: 0px;              /* Asegura que no haya espacio extra a la izquierda */
+}
+
+/* 3. Cambiamos el color de los textos y enlaces del encabezado a blanco */
+.marca h1 {
+    color: #ffffff; 
+    text-decoration: none;
+    margin: 0;
+}
+
+.menu a, .boton-cabezera {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+/* Efecto al pasar el mouse por el menú */
+.menu a:hover {
+    color: #ffeb3b; 
+}
+
+/* Quita los puntos de la lista del menú */
+.menu {
+    list-style: none; 
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Asegura que los enlaces no tengan subrayado */
+.menu a, .marca, .boton-cabezera {
+    text-decoration: none;
+}
+
+/* Centra el texto de la sección de productos y lo coloca en negro */
+.seccion-encabezado {
+    text-align: center; 
+    color: #000000;     
+    margin-bottom: 40px; 
+}
+
+.seccion-encabezado .etiqueta,
+.seccion-encabezado h2,
+.seccion-encabezado p {
+    color: #000000;
+}
+
+/* LIMITAR EL ANCHO GENERAL DEL CATÁLOGO */
+.catalogo .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* CUADRÍCULA DE PRODUCTOS (GRID) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Crea columnas ordenadas y automáticas */
+    gap: 25px; /* Espacio entre las tarjetas */
+    padding: 20px 0;
+} 
+
+/* Estilo general para cada tarjeta de producto */
+.card-product {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 16px;       /* Bordes redondeados de la tarjeta */
+    overflow: hidden;          /* Mantiene la imagen dentro de los bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 15px;             /* Espacio interno dentro de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+}
+
+/* Ajuste para que las imágenes tengan esquinas redondeadas y tamaño uniforme */
+.card-product img {
+    width: 100%;
+    height: 180px;             
+    object-fit: cover;         
+    border-radius: 12px;       
+    display: block;
+}
+
+/* Textos dentro de la tarjeta (Títulos y precios) */
+.producto-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #3e2723;            
+}
+
+.product-precio {
+    font-weight: bold;
+    color: #3e2723;
+    font-size: 16px;
+}
+
+/* Botones de "Añadir al pedido" en color café */
+.card-product .btn-pedido {
+    background-color: #b35900; 
+    color: #ffffff;            
+    border: none;
+    border-radius: 8px;        
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto al pasar el mouse por encima del botón */
+.card-product .btn-pedido:hover {
+    background-color: #8a4300;
+}
+
+/* Estilo general de la sección Conócenos */
+.nosotros {
+    padding: 40px 20px 60px 20px;
+}
+
+/* Contenedor que limita el ancho */
+.nosotros-contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Tarjeta contenedora del texto con el mismo estilo limpio de los productos */
+.nosotros-caja {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 16px;       /* Bordes redondeados */
+    padding: 40px;             /* Espacio interno amplio y cómodo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;        /* Centra todo el texto de la sección */
+}
+
+/* Estilos específicos para los textos de la sección */
+.nosotros-caja .etiqueta {
+    font-weight: bold;
+    color: #b35900;            /* Tono café/naranja a juego con tus botones */
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nosotros-caja h2 {
+    color: #3e2723;            /* Café oscuro elegante */
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.nosotros-caja p {
+    color: #432616;            /* Texto legible y oscuro */
+    font-size: 16px;
+    line-height: 1.6;          /* Espaciado entre líneas para mejor lectura */
+    max-width: 700px;
+    margin: 10px auto;
+}
