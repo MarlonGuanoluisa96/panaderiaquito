@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panadería Quito: los mejores productos artesanales del día.">
+  <title>Panadería Quito | Catálogo de Postres</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- FontAwesome para los íconos (opcional pero recomendado) -->
+  <link rel="stylesheet" href="../postresfinales/estilo/style.css">
+</head>
+
+<body>
+  <!-- SECCIÓN 1: CABECERA Y NAVEGACIÓN -->
+  <header class="encabezado" id="inicio">
+    <div class="contenedor encabezado-contenido">
+      <a class="marca" href="#inicio" aria-label="Panadería Quito, inicio">
+        <img src="img/logopanaderia.jpeg" alt="Panadería Quito" width="110px" height="110px">
+        <h1>Panadería Quito</h1>
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+        </ul>
+      </nav>
+      <!-- Botón de Pedidos -->
+      <a href="#pedido" class="boton boton-principal boton-cabezera">Pedido</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECCIÓN 2: TEXTO DE PRODUCTOS -->
+    <section class="seccion catalogo" id="productos" aria-labelledby="titulo-productos">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <span class="etiqueta">Nuestros productos</span>
+          <h2 id="titulo-productos">Productos del Día</h2>
+          <p>Elige a tu gusto sin perder tu esencia.</p>
+        </div>
+
+        <div class="product-grid">
+          <!-- SECCIÓN 3: CATÁLOGO DE PRODUCTOS -->
+          
+          <!-- Producto 1 -->
+          <article class="card-product">
+            <img src="img/suspiros.jpeg" alt="Suspiro" loading="lazy">
+            <div class="producto-info">
+              <h3>Suspiros</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="suspi">Presentación:</label>
+              <select id="suspi">
+                <option value="1D">1 Docena</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 2 -->
+          <article class="card-product">
+            <img src="img/aplanchados.jpeg" alt="Aplanchados" loading="lazy">
+            <div class="producto-info">
+              <h3>Aplanchados</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="Aplan">Presentación:</label>
+              <select id="Aplan">
+                <option value="1D">1 Docena</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 3 -->
+          <article class="card-product">
+            <img src="img/galletas(chelas).jpeg" alt="galletas" loading="lazy">
+            <div class="producto-info">
+              <h3>Galletas</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="galle">Presentación:</label>
+              <select id="galle">
+                <option value="1D">1 Docena</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 4 -->
+          <article class="card-product">
+            <img src="img/bizcochos-té.jpeg" alt="bizcochos" loading="lazy">
+            <div class="producto-info">
+              <h3>Bizcochos</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="bte">Presentación:</label>
+              <select id="bte">
+                <option value="1D">1 Docena</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 5 -->
+          <article class="card-product">
+            <img src="img/rosquillas.jpeg" alt="rosquillas" loading="lazy">
+            <div class="producto-info">
+              <h3>Rosquillas</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="rosqui">Presentación:</label>
+              <select id="rosqui">
+                <option value="1D">1 Docena</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 6 -->
+          <article class="card-product">
+            <img src="img/pas-naranja-pequeño.jpeg" alt="pas-naranja" loading="lazy">
+            <div class="producto-info">
+              <h3>Pastel Naranja Pequeño</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="paspeque">Presentación:</label>
+              <select id="paspeque">
+                <option value="1D">1 Unidad</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 7 -->
+          <article class="card-product">
+            <img src="img/pas-naranja-pequeño.jpeg" alt="pas-naranja grande" loading="lazy">
+            <div class="producto-info">
+              <h3>Pastel Naranja Grande</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="pasgran">Presentación:</label>
+              <select id="pasgran">
+                <option value="1D">1 Unidad</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 8 -->
+          <article class="card-product">
+            <img src="img/pas-guineo.jpeg" alt="pastel guineo" loading="lazy">
+            <div class="producto-info">
+              <h3>Pastel de Guineo</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="guineo">Presentación:</label>
+              <select id="guineo">
+                <option value="1D">1 Unidad</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 9 -->
+          <article class="card-product">
+            <img src="img/melvas-unidad.jpeg" alt="melvas" loading="lazy">
+            <div class="producto-info">
+              <h3>Melvas</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="melva">Presentación:</label>
+              <select id="melva">
+                <option value="1D">1 Unidad</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 10 -->
+          <article class="card-product">
+            <img src="img/pan-chocolate.jpeg" alt="chocolate" loading="lazy">
+            <div class="producto-info">
+              <h3>Pan de Chocolate</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="choco">Presentación:</label>
+              <select id="choco">
+                <option value="1D">1 Docena</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 11 -->
+          <article class="card-product">
+            <img src="img/guaguas.jpeg" alt="guagua" loading="lazy">
+            <div class="producto-info">
+              <h3>Guagua de Pan</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="gua">Presentación:</label>
+              <select id="gua">
+                <option value="1D">1 Docena</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 12 -->
+          <article class="card-product">
+            <img src="img/melvas pequeñas.jpeg" alt="melvita" loading="lazy">
+            <div class="producto-info">
+              <h3>Melvas En Contenedor</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="melvi">Presentación:</label>
+              <select id="melvi">
+                <option value="1D">6 Unidades</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 13 -->
+          <article class="card-product">
+            <img src="img/orejitas-pequeñas.jpeg" alt="orejas" loading="lazy">
+            <div class="producto-info">
+              <h3>Orejas Pequeñas</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="ore">Presentación:</label>
+              <select id="ore">
+                <option value="1D">6 Unidades</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+          <!-- Producto 14 -->
+          <article class="card-product">
+            <img src="img/orejas-grandes.jpeg" alt="orejas-grandes" loading="lazy">
+            <div class="producto-info">
+              <h3>Orejas Grandes</h3>
+              <p class="product-precio">$1.00</p>
+            </div>
+            <div>
+              <label for="oreja">Presentación:</label>
+              <select id="oreja">
+                <option value="1D">1 Unidad</option>
+              </select>
+            </div>
+            <div class="cantidad-container">
+              <label>Cantidad:</label>
+              <button type="button" class="btn-disminuir">-</button>
+              <input type="number" class="input-cantidad" value="1" min="1" readonly>
+              <button type="button" class="btn-aumentar">+</button>
+            </div>
+            <button type="button" class="btn-pedido">Añadir al pedido</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- SECCIÓN 4: NOSOTROS -->
+  <section class="seccion nosotros" id="nosotros" aria-labelledby="titulo-nosotros">
+    <div class="contenedor nosotros-contenedor">
+      <div class="nosotros-caja">
+        <span class="etiqueta">Conócenos</span>
+        <h2 id="titulo-nosotros">Tradición y sabor en Quito</h2>
+        <p>En Panadería Quito horneamos cada día con ingredientes frescos y de la más alta calidad para llevar lo mejor a tu mesa.</p>
+        <p>Nuestra misión es endulzar tus mañanas y acompañar tus momentos especiales.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
