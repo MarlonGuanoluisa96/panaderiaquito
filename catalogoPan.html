@@ -1,126 +1,247 @@
-  <!doctype html>
-  <html lang="es">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="CSS/catalogo.css" />
-      <link
-        <link href="https://fonts.googleapis.com/css2?family=Oi&family=Spicy+Rice&display=swap" rel="stylesheet">
-      <title>Catálogo</title>
-    </head>
-    <body>
-      <div class="contenedor">  
-      <main>
-<!--Header con logo-->
-      <header>
-        <h1>Catálogo de Panaderia</h1>
-         <div class="logo">
-          <img src="../img/logo.png" alt="Logo panaderia">
-        </div>
-      </header>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/catalogo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oi&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+    <title>Catálogo</title>
+  </head>
+  <body>
+    <div class="contenedor">
+
+        <!--Header con logo-->
+        <header>
+          <h1>Catálogo de Panaderia</h1>
+          <div class="logo">
+            <img src="../img/logo.png" alt="Logo panaderia" /> <!--Logo de la panaderia-->
+          </div>
+        </header>
+
+        <!--Barra de navegacion entre pestañas-->
+        <nav class="navegacion">
+          <ul class="navegador">
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="#">Catálogo</a></li>
+          </ul>
+        </nav>
+
+        
+        <section><!--contiene los elementos correspondientes a un producto específico-->
+          <article>
+            <img src="img/3328.jpg" alt="Pan de Miga" class="imagen" /> <!--muestra la imagen del pan-->
+
+            <div>
+              <h3>Miga</h3> 
+              <p>Pan de miga tradicional</p>
+
+              <div class="accion">
+                <strong>$ 0,15 <em>C/U</em></strong> <!-- STRONG resalta el precio del pan--> 
+                <!-- em = destaca la expresión «C/U», que significa costo por unidad.-->
+
+                <div class="cantidad">
+                  <label for="cantidad-miga">Cantidad:</label> <!--Campo donde el usuario debe ingresar la cantidad que desea agregar.-->
+                  <input type="number" id="cantidad-miga" /> <!--permite ingresar la cantidad de panes.-->
+                </div>
+                <input
+                  type="button"
+                  value="Agregar productos"
+                  class="boton agregar"
+                  data-nombre="Miga"
+                  data-precio="0.15"
+                  data-cantidad="cantidad-miga"
+                /> <!--crea el botón que permite agregar el producto al carrito-->
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img src="../img/cachito.jpg" alt="Pan cachitos" class="imagen" />
+            <div>
+              <h3>Cachitos</h3>
+              <p>Pan en forma de media Luna</p>
+
+              <div class="accion">
+                <strong>$ 0,16 <em>C/U</em></strong>
+                <div class="cantidad">
+                  <label for="cantidad-cachitos">Cantidad:</label>
+                  <input type="number" id="cantidad-cachitos" />
+                </div>
+                <input
+                  type="button"
+                  value="Agregar productos"
+                  class="boton agregar"
+                  data-nombre="Cachitos"
+                  data-precio="0.16"
+                  data-cantidad="cantidad-cachitos"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="../img/reventado.jpg"
+              alt="Pan reventado"
+              class="imagen"
+            />
+            <div>
+              <h3>Reventado</h3>
+              <p>Pan con cubierta externa reventada</p>
+              <div class="accion">
+                <strong>$ 0,15 <em>C/U</em></strong>
+
+                <div class="cantidad">
+                  <label for="cantidad-reventado">Cantidad:</label>
+                  <input type="number" id="cantidad-reventado" />
+                </div>
+
+                <input
+                  type="button"
+                  value="Agregar productos"
+                  class="boton agregar"
+                  data-nombre="Reventado"
+                  data-precio="0.15"
+                  data-cantidad="cantidad-reventado"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="../img/enrollado.jpg"
+              alt="Pan enrollado"
+              class="imagen"
+            />
+            <div>
+              <h3>Enrollado</h3>
+              <p>Pan con capas hojaldradas por dentro</p>
+              <div class="accion">
+                <strong>$ 0,15 <em>C/U</em></strong>
+
+                <div class="cantidad">
+                  <label for="cantidad-enrollado">Cantidad:</label>
+                  <input type="number" id="cantidad-enrollado" />
+                </div>
+                <input
+                  type="button"
+                  value="Agregar productos"
+                  class="boton agregar"
+                  data-nombre="Enrollado"
+                  data-precio="0.15"
+                  data-cantidad="cantidad-enrollado"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img src="../img/gusanito.jpg" alt="Pan gusanito" class="imagen" />
+            <div>
+              <h3>Gusanito</h3>
+              <p>Pan con forma destacada de un gusanito</p>
+              <div class="accion">
+                <strong>$ 0,15 <em>C/U</em></strong>
+
+                <div class="cantidad">
+                  <label for="cantidad-gusanito">Cantidad:</label>
+                  <input type="number" id="cantidad-gusanito" />
+                </div>
+
+                <input
+                  type="button"
+                  value="Agregar productos"
+                  class="boton agregar"
+                  data-nombre="Gusanito"
+                  data-precio="0.15"
+                  data-cantidad="cantidad-gusanito"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img src="../img/yema.jpg" alt="Pan yema" class="imagen" />
+            <div>
+              <h3>Pan de Yema</h3>
+              <p>Pan bañado con yema de huevo y chispas de ajonjolí</p>
+
+              <div class="accion">
+                <strong>$ 0,16 <em>C/U</em></strong>
+
+                <div class="cantidad">
+                  <label for="cantidad-yema">Cantidad:</label>
+                  <input type="number" id="cantidad-yema" />
+                </div>
+
+                <input
+                  type="button"
+                  value="Agregar productos"
+                  class="boton agregar"
+                  data-nombre="Yema"
+                  data-precio="0.16"
+                  data-cantidad="cantidad-yema"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img src="../img/suizo.jpg" alt="Pan suizo" class="imagen" />
+            <div>
+              <h3>Suizo</h3>
+              <p>Pan con marcado sabor a mantequilla</p>
+              <div class="accion">
+                <strong>$ 0,17 <em>C/U</em></strong>
+
+                <div class="cantidad">
+                  <label for="cantidad-suizo">Cantidad:</label>
+                  <input type="number" id="cantidad-suizo" />
+                </div>
+
+                <input
+                  type="button"
+                  value="Agregar productos"
+                  class="boton agregar"
+                  data-nombre="Suizo"
+                  data-precio="0.17"
+                  data-cantidad="cantidad-suizo"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <img src="../img/bizcocho.jpg" alt="Pan bizcocho" class="imagen" />
+            <div>
+              <h3>Bizcocho</h3>
+              <p>Pan consistencia seca y crocante</p>
+              <div class="accion">
+                <strong>$ 0,17 <em>C/U</em></strong>
+
+                <div class="cantidad">
+                  <label for="cantidad-bizcocho">Cantidad:</label>
+                  <input type="number" id="cantidad-bizcocho" />
+                </div>
+                <input
+                  type="button"
+                  value="Agregar productos"
+                  class="boton agregar"
+                  data-nombre="Bizcocho"
+                  data-precio="0.17"
+                  data-cantidad="cantidad-bizcocho"
+                />
+              </div>
+            </div>
+          </article>
+        </section>
       
-      <!--Barra de navegacion entre pesta;as-->
-      <nav>
-        <ul class="navegador">
-          <li><a href="../../index.html">Inicio</a></li>
-          <li><a href="#">Catálogo</a></li>
-        </ul>
-      </nav>
+    </div>
 
-      <section>
-        <!--este para que todo nos represente un solo catalogo-->
-
-        <article>
-          <img src="../img/Rosita.jpeg" alt="Pan de Miga" class="imagen" />
-
-          <div class="miga">
-            <h3>Miga</h3>
-            <p>Pan de miga tradicional</p>
-            <strong>$ 0,15 <em>C/U</em></strong>
-            <button>Agregar Producto</button>
-          </div>
-        </article>
-
-        <article>
-          <img src="../img/cachito.jpg" alt="Pan cachitos" class="imagen" />
-          <div>
-            <h3>Cachitos</h3>
-            <p>Pan en forma de media Luna</p>
-            <strong>$ 0,16 <em>C/U</em></strong>
-
-            <button>Agregar Producto</button>
-          </div>
-        </article>
-
-        <article>
-          <img src="../img/reventado.jpg" alt="Pan reventado" class="imagen" />
-          <div>
-            <h3>Reventado</h3>
-            <p>Pan con cubierta externa reventada</p>
-            <strong>$ 0,15 <em>C/U</em></strong>
-
-            <button>Agregar Producto</button>
-          </div>
-        </article>
-
-        <article>
-          <img src="../img/enrollado.jpg" alt="Pan enrollado" class="imagen"
-          />
-          <div>
-            <h3>Enrollado</h3>
-            <p>Pan con capas hojaldradas por dentro</p>
-            <strong>$ 0,15 <em>C/U</em></strong>
-
-            <button>Agregar Producto</button>
-          </div>
-        </article>
-
-        <article>
-          <img src="../img/gusanito.jpg" alt="Pan gusanito" class="imagen" />
-          <div>
-            <h3>Gusanito</h3>
-            <p>Pan con forma destacada de un gusanito</p>
-            <strong>$ 0,15 <em>C/U</em></strong>
-
-            <button>Agregar Producto</button>
-          </div>
-        </article>
-
-        <article>
-          <img src="../img/yema.jpg" alt="Pan yema" class="imagen" />
-          <div>
-            <h3>Pan de Yema</h3>
-            <p>Pan bañado con yema de huevo y chispas de ajonjolí</p>
-            <strong>$ 0,16 <em>C/U</em></strong>
-
-            <button>Agregar Producto</button>
-          </div>
-        </article>
-
-        <article>
-          <img src="../img/suizo.jpg" alt="Pan suizo" class="imagen" />
-          <div>
-            <h3>Suizo</h3>
-            <p>Pan con marcado sabor a mantequilla</p>
-            <strong>$ 0,17 <em>C/U</em></strong>
-
-            <button>Agregar Producto</button>
-          </div>
-        </article>
-
-        <article>
-          <img src="../img/bizcocho.jpg" alt="Pan bizcocho" class="imagen" />
-          <div>
-            <h3>Bizcocho</h3>
-            <p>Pan consistencia seca y crocante</p>
-            <strong>$ 0,17 <em>C/U</em></strong>
-
-            <button>Agregar Producto</button>
-          </div>
-        </article>
-      
-      </section>
-      </main>
-      </div>
-    </body>
-  </html>
+    <script src="JS/catalogo.js"></script> <!--para vincular el archivo JavaScript con el documento HTML-->
+  </body>
+</html>
