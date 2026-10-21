@@ -7,54 +7,108 @@
     <link rel="stylesheet" href="CSS/form.css">
 </head>
 <body>
-    <header>
-        <h1>
-            Panaderia Quito
-        </h1>
+    <header>        
+        <div class="icono">
+            <a href="index.html"> 
+                <img src="icons/icons8-casa-50.png" alt="casaicono">
+            </a>
+            <a href="catalogoPan.html">
+                <img src="icons/icons8-pan-64.png" alt="panicono">
+            </a>
+            <a href="catalogopostres.html">
+                <img src="icons/icons8-cupcake-48.png" alt="pastelicon">
+            </a>
+        </div>
+        
+        <div>
+            <h1>Panaderia Quito</h1>
+        </div>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="logopanaderia">
+        </div>
     </header>
-    <section>
+    <section class="Cabeza">
         <h2>Formulario de Reserva</h2>
     </section>
-    <div class="contendor-formulario">
+    <div class="contenedor-formulario">
         <form action="">
-            <label for="">Nombres y Apellidos</label>
+            <div class="campo">
+                <label for="">Nombres y Apellidos</label>
             <input type="text" placeholder="Nombres y Apellidos">
-            <br>
-            <label for="">Cedula</label>
+            </div>
+            
+            <div class="campo">
+                <label for="">Cedula</label>
             <input type="" placeholder="Cedula">
-            <br>
-            <label for="">Direccion</label>
-            <input type="text" placeholder="Direccion">
-            <br>
-            <label for="">Telefono</label>
+            </div>
+            
+            <div class="campo">
+               <label for="">Direccion</label>
+            <input type="text" placeholder="Direccion"> 
+            </div>
+            
+              <div class="campo">
+                <label for="">Telefono</label>
             <input type="tel" placeholder="09XXXXXXXX">
-            <br>
-            <label for="">Correo electronico</label>
+            </div>
+            
+              <div class="campo">
+                <label for="">Correo electronico</label>
             <input type="email" placeholder="ejemplo@email.com">
-            <br>
-            <label for="">Comentarios</label>
-            <br>
-            <textarea name="" id="" placeholder="Escriba aqui su comentario..."></textarea>
-            <br>
-            <label for="TipoPago">Tipo de pago</label>
-            <br>
-            <input type="radio" name="TipoPago" id="Efectivo"> Efectivo
-            <input type="radio" name="TipoPago" id="Transferencia"> Transferencia`
-            <br>
-            <Label>Subir comprobante</Label>
-            <input type="file" name="" id="" accept=".pdf,.png,.jpg"> 
-            <p>Solo archivos pdf, jpg y png.</p>
-            <label for="">Fecha y hora de retiro</label>
-            <input type="datetime-local" name="" id="">
-            <br>
-            <input type="button" value="Imprimir comprobante">
-            <input type="reset" value="Limpiar campos">
+            </div>
+            
+             <div class="campo">
+                <label for="">Comentarios</label>
+                <textarea name="" id="" placeholder="Escriba aqui su comentario..."></textarea>
+            </div>
+            
+              <div class="seleccion">
+                <div>
+                    <label for="TipoPago">Tipo de pago</label>
+                </div>
+                <div class="pago">
+                    <label for="efectivo">
+                        <input type="radio" name="tipoPago" value="efectivo" id="efectivo" checked> Efectivo
+                    </label>
+                    <label for="transferencia">
+                        <input type="radio" name="tipoPago" value="transferencia" id="transferencia"> Transferencia
+                    </label>
+                </div>
+            </div>
+            
+            <div class="contenedorComprobante" id="contenedorComprobante" style="display: none; margin-top: 5px;">
+                <label for="fotoComprobante">Subir comprobante</Label>
+                <input type="file" name="fotoComprobante" id="fotoComprobante" accept=".pdf,.png,.jpg">
+            </div>
+            
+              <div class="campo" id="retiro">
+                <label for="">Fecha y hora de retiro</label>
+                <input type="datetime-local" name="" id="">
+            </div>
+            
+              <div class="botones">
+                <input class="boton" type="submit" value="Imprimir comprobante">
+                <input class="boton" type="reset" value="Limpiar campos">
+            </div>
+            
         </form>
+        
     </div>
-    <footer>
-        <p>
-
-        </p>
+    <footer class="pie-pagina" id="pie-pagina">
+        <div>
+            <h3>Contactanos!</h3>
+        </div>
+        <div>
+            <p><strong>Dirección: </strong>Av. Gonzalo Zaldumbide y Matias Virgil, Quito, Ecuador.</p>
+            <p><strong>Teléfono: </strong>0962291666</p>
+            <p><strong>Correo: </strong>panypastelquito@gmail.com</p>
+            <p><strong>Horario: </strong>06:00 a 21:00</p>
+        </div>
+        <div>
+            <small>Panadería Quito Derechos Reservados©</small>
+        </div>
     </footer>
+<script src="scripts/form.js"></script>
 </body>
 </html>

@@ -1,13 +1,142 @@
+*{
+    box-sizing: border-box;
+}
 header{
-    background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #3d2314;
     color: white;
+    overflow: hidden;
+
+}
+header h1{
+    font-family:'Lucida Handwriting';
+    font-size: 50px;
+}
+.logo{
+    justify-self: end;
+}
+.logo img{
+    width: 100px;
+}
+.icono{
+    filter: brightness(0) invert(1);
+}
+.icono a{
+    text-decoration: none;
+}
+.icono img{
+    display: inline-block;
+    margin-right: 10px;
 }
 
 body{
-    background-color: blanchedalmond;
+    margin: 0;
+    font-family: 'Copperplate';
+    background-image: url("../img/panesfondo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+section h2 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+.contenedor-formulario {
+    background-color: burlywood;
+    width: min(90%, 900px);
+    border: 8px solid;
+    border-color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 2;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
-.contenedor-formulario{
-    border: 1px;
-    border-color: black;
+.campo {
+  display: grid;
+  grid-template-columns: 180px 1fr; 
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 2px solid #3d2314;
+  border-radius: 15px;
+}
+
+.campo textarea {
+  min-height: 80px;
+  resize: vertical;
+  border: 2px solid #3d2314;
+  border-radius: 15px;
+}
+.seleccion{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr ;
+    align-items: center;
+}
+.pago{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.pago label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.contenedorComprobante{
+    justify-self:center ;
+}
+#retiro{
+    margin-top: 10px;
+}
+.botones{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+.boton {
+ display: block;
+ padding: 12px 18px;
+ color: #ffffff;
+ background:#9F5032;
+ border-radius: 8px;
+ text-decoration: none;
+ font-weight: 700;
+}
+.boton:hover {
+ background: whitesmoke;
+ color: #3d2314;
+ border-color: #3d2314;
+ cursor: pointer;
+}
+.pie-pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #3d2314;
+    color: white;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.pie-pagina h3{
+    font-size: 50px;
 }
