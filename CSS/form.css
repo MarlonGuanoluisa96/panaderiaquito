@@ -145,6 +145,123 @@ section h2 {
 .pie-pagina h3{
     font-size: 50px;
 }
+/* Tabletas y pantallas medianas */
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: auto 1fr auto;
+        gap: 12px;
+        padding: 10px 16px;
+    }
 
+    header h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 75px;
+    }
+
+    .icono img {
+        width: 38px;
+        margin-right: 4px;
+    }
+
+    .contenedor-formulario {
+        width: min(94%, 700px);
+    }
+
+    .campo {
+        grid-template-columns: 150px minmax(0, 1fr);
+    }
+
+    .pago {
+        gap: 30px;
+    }
+
+    .pie-pagina h3 {
+        font-size: 36px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    header {
+        grid-template-columns: 1fr auto;
+    }
+
+    header h1 {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        font-size: 30px;
+        margin: 8px 0;
+    }
+
+    .icono {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .logo {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .icono img {
+        width: 32px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    .contenedor-formulario {
+        width: 95%;
+        padding: 14px;
+        font-size: 17px;
+    }
+
+    .campo {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .pago {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .seleccion {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin: 16px 0;
+    }
+
+    .botones .boton {
+        text-align: center;
+    }
+
+    .pie-pagina {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .pie-pagina h3 {
+        font-size: 28px;
+        margin: 8px 0;
+    }
+}
 
 
