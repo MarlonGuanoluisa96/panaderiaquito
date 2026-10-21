@@ -1,6 +1,8 @@
+/*GLobal*/
 *{
     box-sizing: border-box;
 }
+/*Encabezado*/
 header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -31,7 +33,7 @@ header h1{
     display: inline-block;
     margin-right: 10px;
 }
-
+/*Cuerpo*/
 body{
     margin: 0;
     font-family: 'Copperplate';
@@ -45,6 +47,7 @@ section h2 {
     text-align: center;
     font-size: 50px;
 }
+/*Formulario*/
 .contenedor-formulario {
     background-color: burlywood;
     width: min(90%, 900px);
@@ -57,7 +60,7 @@ section h2 {
     font-size: 20px;
     margin-bottom: 30px;
 }
-
+/*Campos de ingreso de datos*/
 .campo {
   display: grid;
   grid-template-columns: 180px 1fr; 
@@ -98,6 +101,7 @@ section h2 {
     gap: 5px;
     cursor: pointer;
 }
+/*Contendor oculta hasta el evento transferencia*/
 .contenedorComprobante{
     justify-self:center ;
 }
@@ -126,6 +130,7 @@ section h2 {
  border-color: #3d2314;
  cursor: pointer;
 }
+/*Pie de pagina*/
 .pie-pagina{
     display: flex;
     flex-direction: row;

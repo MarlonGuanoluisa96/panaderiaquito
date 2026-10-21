@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
-    <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="CSS/form.css"><!--Estilos-->
 </head>
 <body>
+    <!--Cabecera-->
     <header>        
-        <div class="icono">
+        <div class="icono"><!--Iconos con enlaces-->
             <a href="index.html"> 
                 <img src="icons/icons8-casa-50.png" alt="casaicono">
             </a>
@@ -20,18 +21,18 @@
             </a>
         </div>
         
-        <div>
+        <div><!--Nombre del sitio web-->
             <h1>Panaderia Quito</h1>
         </div>
 
-        <div class="logo">
+        <div class="logo"><!--Logo-->
             <img src="img/logo.png" alt="logopanaderia">
         </div>
     </header>
-    <section class="Cabeza">
+    <section class="Cabeza"><!--Cabecera del formulario-->
         <h2>Formulario de Reserva</h2>
     </section>
-    <div class="contenedor-formulario">
+    <div class="contenedor-formulario"><!--Contenedor del formulario-->
         <form action="">
             <div class="campo">
                 <label for="">Nombres y Apellidos</label>
@@ -63,7 +64,7 @@
                 <textarea name="" id="" placeholder="Escriba aqui su comentario..."></textarea>
             </div>
             
-              <div class="seleccion">
+              <div class="seleccion"><!--Seleccion del tipo de pago-->
                 <div>
                     <label for="TipoPago">Tipo de pago</label>
                 </div>
@@ -76,7 +77,7 @@
                     </label>
                 </div>
             </div>
-            
+            <!--Opcion oculta hasta que de clic en transferencia-->
             <div class="contenedorComprobante" id="contenedorComprobante" style="display: none; margin-top: 5px;">
                 <label for="fotoComprobante">Subir comprobante</Label>
                 <input type="file" name="fotoComprobante" id="fotoComprobante" accept=".pdf,.png,.jpg">
@@ -95,6 +96,7 @@
         </form>
         
     </div>
+    <!--Pie de pagina-->
     <footer class="pie-pagina" id="pie-pagina">
         <div>
             <h3>Contactanos!</h3>
@@ -109,6 +111,7 @@
             <small>Panadería Quito Derechos Reservados©</small>
         </div>
     </footer>
+<!--JavaScript-->
 <script src="scripts/form.js"></script>
 </body>
 </html>

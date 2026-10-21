@@ -1,86 +1,186 @@
-*{
-    box-sizing: border-box;
+*{/* Aplica esta regla a todos los elementos de la página*/
+    box-sizing: border-box; 
 }
 
 body{
-    margin: 0;
-    background-color: #f9ad16;
-    color: #2b180d;
+    margin: 0; /* Elimina el margen predeterminado del navegador*/
+    background-color: #f9ad16; /* Fondo del documento */
+    color: #2b180d; /*color del texto*/
 }
 .contenedor{
-    width: 100%;
+    width: 100%; /* Ocupa todo el ancho disponible*/
     margin: 0;
     background-color: #f9ad16;
 }
-/*encabezxado*/
+/*Encabezado de la pagina*/
 header{
-    background-color: #3d2314;
+    display: flex; /*Organiza los elementos en una fila */
+    justify-content:space-between ; /*separa los elementos */
+    align-items: center;/*Centra los elementos verticalmente */
+    background-color: #3d2314; 
     color: #ffae16;
-    padding: 15px 25px;
-    display: flex;
-    justify-content:space-between ;
-    min-height: 110px;
-    align-items: center;
+    padding: 1px 25px; /*Espacio interno*/
 
 }
-
+/*Titulo principal del encabezado*/
 header h1{
+    margin: 0;  
+    text-align: center; /* Centra el texto */
+    font-family: 'Spicy Rice'; /* Tipo de letra del título */
+    font-size: 40px; /* Tamaño de la letra */
+}
+
+.logo{ /* Tamaño del contenedor del logo */
+    width: 80px;
+}
+
+.logo img{ /*Ajustes de la imagen del logo al contenedor*/
+    display: block;/*Evita espacios debajo de la imagen */
+    width: 100%; /*Ocupa el ancho del contenedor */
+    height: auto; /* Mantiene sus proporciones para que se vea bien */
+}
+
+/*Barra de navegacioon*/
+
+.navegacion{
+    background-color: #3d2314;
+    padding: 5px 25px 10px; /*Espacio interior */    
+}
+
+.navegacion ul{ /* Organiza los enlaces del menú */
+    display: flex; /* Coloca los enlaces en una fila */
+    align-items: center; /*Los centra verticalmente*/
+    gap: 10px; /*Separa los enlaces */
+    list-style: none; /*Quita los puntos de la lista*/
     margin: 0;
-    text-align: center;
-    font-family: 'Spicy Rice';
-    font-size: 50px;
+    padding: 0;
 }
 
-.logo{
-    width: 100px;
+
+.navegacion a{ /* Apariencia de los enlaces del menú */
+    display: block;
+    text-decoration: none; /* Quita el subrayado */
+    color: #f9ad16;
+    padding: 8px 14px;
+    border-radius: 9px; /* Redondea las esquinas */
+    transition: 0.3s; /* Suaviza los cambios de color */
 }
 
-.logo img{
-    width: 100%;
+.navegacion a:hover { /* Efecto cuando el cursor pasa sobre un enlace */
+    background-color: #ffae16;
+    color: #2b180d;/* Cambia el texto a cafe*/
 }
 
-/*barra nav con carrito*/
 
-
-
-
-
-/*CATALOGO*/
+/*Catalogo de productos*/
 section {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid; /*Organiza los productos en una cuadrícula */
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Distribuye los productos en tres columnas */
     gap: 20px;
     padding: 25px;
-    align-items: stretch;
-    height: auto;
+    align-items: stretch; /*Permite que las tarjetas se estiren */
 }
-article {
-    background-color: whitesmoke;
-    padding: 12px;
-    border-radius: 10px;
+
+article { /* Diseño de cada tarjeta de producto */
+    background-color: #fffaf0;
+    padding: 18px;
+    border-radius: 12px;
     box-shadow: 0 3px 15px #00000020;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    min-width: 0;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    min-width: 0; /* Evita que la tarjeta se ensanche demasiado */
     transition: transform 0.2s;
 }
 
-
+/*Tamaño y apariencia de las imágenes de los panes */
 article img{
 
-    width: 125px;
-    height: 125px;
+    width: 100%; /*Ocupa el ancho disponible */
+    max-width: 220px; /*Limita el ancho de la imagen */
+    height: 165px;
+    object-fit: cover; /*Ajusta la imagen sin deformarla */
+    border-radius: 40px;
 }
 
-button {
-    width: fit-content;/*para que el boton no se vea anchoooooo*/
-    padding: 8px 15px;
-    border: none;
-    border-radius: 8px;
+/* Títulos de los productos */
+article h3{
+    margin: 5px;
+    font-size: 23px;
+}
+
+/* Descripciones de los productos */
+article p{
+    margin: 0;
+    line-height: 1.6; /*ENTRE LINEADO = SEPARACION*/
+}
+
+
+.accion{/* Área del precio y del botón */
+    display: flex;
+    align-items: center;/*Los centra */
+    flex-direction: column; /* Los coloca uno debajo de otro */
+    gap: 12px;
+    
+}
+
+/* Diseño de los botones */
+.boton {
+    padding: 10px 25px;
+    border: none; /* Quita el borde */
+    border-radius: 10px;
     background-color: #3d2314;
-    color: white;
-
-    cursor: pointer;
-
+    cursor: pointer; /* Muestra la mano al pasar el cursor */
+    color: #f9ad16;
+    
 }
+
+/* Organiza la etiqueta y el campo de cantidad */
+.cantidad {
+    display: flex; /* Coloca ambos elementos en una fila */
+    align-items: center; /* Los centra verticalmente */
+    justify-content: center; /* Los centra horizontalmente */
+    
+}
+
+/* Para tabletas */
+@media (max-width: 900px) {
+    section {
+        /* Muestra 2 productos */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para celulares */
+@media (max-width: 600px) {
+    section {
+        /* Muestra 1 producto */
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        /* Coloca los elementos del encabezado uno debajo del otro */
+        flex-direction: column;
+    }
+
+    header h1 {
+         /* Reduce el tamaño del título */
+        font-size: 26px;
+    }
+
+    .navegacion ul {
+        
+        flex-wrap: wrap;/* Permite que los enlaces pasen a otra linea si no cabe*/
+        justify-content: center;/* Centra los enlaces del menú */
+    }
+}
+
+
+
+
+
+
+
+

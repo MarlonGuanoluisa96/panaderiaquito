@@ -1,7 +1,7 @@
-const radiosPago = document.querySelectorAll('input[name="tipoPago"]');
-const contenedorComprobante = document.getElementById('contenedorComprobante');
-radiosPago.forEach(radio => {
-    radio.addEventListener('change', (e) => {
+const radiosPago = document.querySelectorAll('input[name="tipoPago"]'); // Obtiene los elementos tipoPago
+const contenedorComprobante = document.getElementById('contenedorComprobante'); // Obtiene el elemto que tiene
+radiosPago.forEach(radio => { //Recorre cada radio 
+    radio.addEventListener('change', (e) => {  // Detector de evento 
         if (e.target.value === 'transferencia') {
             // Si es transferencia, mostramos el campo
             contenedorComprobante.style.display = 'block';
