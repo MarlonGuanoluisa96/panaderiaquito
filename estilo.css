@@ -19,18 +19,21 @@
     line-height: 0.8;
     background: #3d2314;
     color: white;
-    padding: 10px;
+    padding: 30px;
     border-radius: 10px;
 }
 .encabezado h1{
     font-family: lucida handwriting;
     text-decoration: underline;
+    padding: 10px;
 }
 .encabezado h2{
     color: antiquewhite;
+    padding: 10px;
 }
 /*Aplicamos estilos al Menú*/
 .menu{
+    padding: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
