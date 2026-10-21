@@ -3,7 +3,7 @@
     
     box-sizing: border-box;
     margin: 0;
-    padding: 10px;
+    
 }
 /* Aplicamos estilos al Body*/
 .cuerpo {
@@ -110,7 +110,7 @@
     border-bottom: 2px solid #E65100;
 }
 .img{
-     width: %;
+     width: 100%;
     height: 220px;
 }
 
